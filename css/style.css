@@ -1,0 +1,111 @@
+input[type="button"]:hover{
+    background-color:slategray;
+    cursor: pointer;
+}
+input[type="button"].arit{
+    background-color: purple;
+}
+input[type="button"].igual{
+    background-color: rgb(79, 170, 26);
+}
+input[type="button"].clear{
+    background-color:rgb(245, 112, 134);
+}
+form{
+    background-color:white;
+}
+input[type="text"]{
+    background-color:black;
+    border:0px;
+    width:250px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    text-align: right;
+    pointer-events: none;
+}
+input[name="txtcaja1"]{
+    height: 20px;
+    font-size: 16px;
+}
+input[name="txtcaja2"]{
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+input[type="button"]{
+    font-size: 18px;
+    font-weight:lighter;
+    font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    width:60px;border:0px;
+    height: 60px;
+    color: white;
+    background-color:rgb(34, 163, 163);
+    margin-bottom: 5px;
+    }
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    }
+
+    html, body {
+        height: 10%;
+        }
+    
+
+
+    body{
+        background-color:rgb(13, 141, 141);
+        text-align: center;
+        
+    }
+    
+    body:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        height: 100%;
+        }
+    
+
+h1 {
+    display: inline-block;
+    color:white;
+    font-family: 'Righteous', serif;
+    font-size: 70px; 
+    text-shadow: .02em .02em 0  black;
+    }
+    h1:after {
+      content: attr(data-shadow);
+      position: absolute;
+      top: .06em; left: .06em;
+      z-index: -1;
+      text-shadow: none;
+      background-image:
+        linear-gradient(
+          45deg,
+          transparent 45%,
+          hsla(48,20%,90%,1) 45%,
+          hsla(48,20%,90%,1) 55%,
+          transparent 0
+          );
+      background-size: .05em .05em;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
+      animation: shad-anim 15s linear infinite;
+      }
+  
+  @keyframes shad-anim {
+    0% {background-position: 0 0}
+    0% {background-position: 100% -100%}
+    }
